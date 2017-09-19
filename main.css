@@ -89,8 +89,9 @@
     border: none;
     padding: 10px;
     border-radius: 5px;
+    padding-left: 15px;
+    padding-right: 15px;
     margin-left: 5px;
-    margin-right: 5px;
 
 }
 
@@ -112,6 +113,7 @@
     padding: 1em 2em 1.15em;
     line-height: 1em;
     border-radius: .4em;
+
 }
 
 .button.search{
@@ -154,6 +156,16 @@ body{
     background: #DADADA;
 }
 
+h3 {
+    display: block;
+    font-size: 1.17em;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    font-weight: bold;
+}
+
 
 .right-column {
     float: left;
@@ -164,9 +176,6 @@ body{
 .bl-title{
     border-bottom: 1px solid #DADADA;
     padding: 10px;
-    font-size: large;
-    font-weight: 700;
-    font-family: Lato,'Helvetica Neue',Arial,Helvetica,sans-serif;
 }
 
 .remaining-elements{
