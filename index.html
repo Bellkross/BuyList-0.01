@@ -13,52 +13,13 @@
         <div class="bl-list">
             <div class="segment">
                 <div class="bl-row input-elem">
-                    <input type="text" placeholder="   Назва товару">
                     <button class="button search">Додати</button>
+                    <div class="input-wrap"><input class="input-name" type="text" placeholder="Назва товару"></div>
                 </div>
             </div>
-            <div class="bl-row buy-elem">
-                <div class="bl-product">Помідори</div>
-                <div class="bl-count">
-                    <button class="bl-minus">-</button>
-                    <span class="bl-label">1</span>
-                    <button class="bl-plus">+</button>
-                </div>
-                <div class="bl-buttons">
-                    <button class="bl-cancel">x</button>
-                    <button class="bl-bought">Куплено</button>
-                </div>
-            </div>
-            <div class="bl-row buy-elem">
-                <div class="bl-product">
-                    Сир
-                </div>
-                <div class="bl-count">
-                    <button class="bl-minus">-</button>
-                    <span class="bl-label">1</span>
-                    <button class="bl-plus">+</button>
-                </div>
-                <div class="bl-buttons">
-                    <button class="bl-cancel">x</button>
-                    <button class="bl-bought">Куплено</button>
-                </div>
-            </div>
-            <div class="bl-row buy-elem">
-                <div class="bl-product">
-                    Печиво
-                </div>
-                <div class="bl-count">
-                    <button class="bl-minus">-</button>
-                    <span class="bl-label">1</span>
-                    <button class="bl-plus">+</button>
-                </div>
-                <div class="bl-buttons">
-                    <button class="bl-cancel">x</button>
-                    <button class="bl-bought">Куплено</button>
-                </div>
+
             </div>
         </div>
-    </div>
     <div class="right-column">
         <div class="bl-bought-lc">
             <div class="bl-title">
@@ -84,7 +45,37 @@
             <div class="buying-elements"></div>
         </div>
     </div>
+    <div class="badge">
+        <div class="title"> Buy List</div>
+        <div class="created"> Created by: </div>
+        <div class="name">Bellkross(Kirill Vasilenko)</div>
+    </div>
+
+    <div class="one-row-template" style="display: none">
+    <div class="bl-row buy-elem">
+        <div class="bl-product">
+            Сир
+        </div>
+        <input class="edit" style="display: none"/>
+        <div class="bl-count">
+            <button class="bl-minus">-</button>
+            <span class="bl-label">1</span>
+            <button class="bl-plus">+</button>
+        </div>
+        <div class="bl-buttons">
+            <button class="bl-cancel">x</button>
+            <button class="bl-bought">Куплено</button>
+        </div>
+    </div>
+    </div>
+
+    <div class="macfix">
+    </div>
 </div>
+
+<script type="text/javascript"src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+<script type="text/javascript"src="main.js"> </script>
+
 </body>
 
 </html>
