@@ -40,6 +40,10 @@
     padding-top: 8px;
 }
 
+.edit{
+    float: left;
+}
+
 .bl-count {
     width: 30%;
     float: left;
