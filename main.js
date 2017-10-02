@@ -31,12 +31,14 @@ $(function () {
         $list.append($node);
     }
 
+    addItem("Pomidori");
+
 
     $node.find(".bl-product").click(function () {
         $nide.find(".bl-product").hide();
         $node.find(".edit").show();
         $node.find(".edit").val(title);
-    })
+    });
 
     $node.find(".edit").focusout(function () {
         $node.find(".bl-product").show();
@@ -44,7 +46,7 @@ $(function () {
 
         title = $node.find(".edit").val();
         $node.find(".bl-product").text(title);
-    })
+    });
 
 
     var $new_input = $(".new-item");
@@ -55,5 +57,5 @@ $(function () {
             addItem(new_name);
 
         }
-    })
+    });
 });
