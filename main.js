@@ -14,6 +14,8 @@ $(function () {
             $quantity_label.text(quantity);
         });
 
+        //$node.find(".bl-minus").prop("disabled", true);
+
         $node.find(".bl-minus").click(function () {
             if(quantity>1){
                 quantity -= 1;
@@ -21,8 +23,16 @@ $(function () {
             }
         });
 
-        $node.find(".bl-cancel").click(function () {
+        $node.find(".bl-delete").click(function () {
             $node.hide();
+        });
+
+        $node.find(".bl-buy").click(function () {
+            $node.addClass("is-bought");
+        });
+
+        $node.find(".bl-unbuy").click(function () {
+            $node.removeClass("is-bought");
         });
 
         $node.find(".bl-product").click(function () {
@@ -39,12 +49,27 @@ $(function () {
             $node.find(".bl-product").text(title);
         });
 
+        $node.find(".one-row-template.bl-bought").click(function () {
+            $node.find(".bl-buttons.bl-bought").classList.add(" bought-elem");
+            $node.find(".bl-buttons.bl-bought").className.add(" bought-elem");
+        });
+
         $list.append($node);
 
     }
 
-    addItem("Помідри1");
-    addItem("Помідри2");
-    addItem("Помідри3");
+    addItem("Помідри");
+    addItem("Яблуки");
+    addItem("Сир");
+
+    var $new_input = $(".input-name");
+    $(".button-add").click(function () {
+        var new_name = $new_input.val();
+        if(new_name.trim()) {
+            addItem(new_name);
+            $new_input.val("");
+            $new_input.focus();
+        }
+    });
 
 });

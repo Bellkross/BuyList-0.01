@@ -22,7 +22,7 @@
 
 }
 
-.bl-row.buy-elem{
+.bl-row{
     padding: 1em 1em 3em 1em;
     border-bottom: solid #DADADA;
 
@@ -89,7 +89,7 @@
     display: inline-block;
 }
 
-.bl-cancel{
+.bl-delete{
     color: white;
     background: red;
     float: right;
@@ -98,15 +98,24 @@
     border-radius: 5px;
     padding-left: 15px;
     padding-right: 15px;
-    margin-left: 5px;
 
 }
 
-.bl-bought{
+.bl-unbuy{
     background: #DADADA;
     padding: 10px;
-    float: right;
+    margin-right: 5px;
     border: none;
+    float: right;
+    border-radius: 5px;
+}
+
+.bl-buy{
+    background: #DADADA;
+    padding: 10px;
+    margin-right: 5px;
+    border: none;
+    float: right;
     border-radius: 5px;
 }
 
@@ -115,7 +124,7 @@
     border-radius: 10px;
 }
 
-.button.search{
+.button.button-add{
     background-color: #2185D0;
     color: #fff;
     box-shadow: 0 -0.3em 0 0 rgba(34,36,38,.15) inset;
@@ -127,6 +136,10 @@
 
 .bl-row.input-elem {
     font-size: 0;
+}
+
+.bl-bought.bought-elem {
+    margin: 100px;
 }
 
 /*input, body, etc.*/
@@ -321,3 +334,18 @@ button:hover::after {
     transform: scale(1);
 }
 
+.bl-row .bl-unbuy{
+    display: none;
+}
+
+.bl-row.is-bought button{
+    display: none;
+}
+
+.bl-row.is-bought .bl-unbuy{
+    display: inline;
+}
+
+.bl-row.is-bought .bl-product{
+    text-decoration: line-through;
+}
