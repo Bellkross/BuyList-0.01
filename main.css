@@ -291,7 +291,13 @@ button {
 
 button::after {
 
+    transition: all 1s ease;
+
     content: "";
+
+    position: absolute;
+    height: 20px;
+    width: 100px;
 
     top: -25px;
     left: 50%;
@@ -306,20 +312,12 @@ button::after {
     transform-origin: left;
 
 }
-/*write scale */
+
 button:hover::after {
-
-
-    transition: all 1s ease, margin 1s ease;
     content: "TT: " attr(data-tooltip);
-
-    position: absolute;
-    height: 20px;
-    width: 100px;
 
     margin-left: -50px;
 
     transform: scale(1);
-
 }
 
