@@ -35,13 +35,24 @@
 }
 
 .bl-product {
+    margin-right: 50%;
+
+}
+
+.bl-container {
     width: 30%;
     float: left;
     padding-top: 8px;
+    box-sizing: border-box;
+
 }
 
 .edit{
+    font-size: 12px;
     float: left;
+    width: auto;
+    padding: 1px;
+    box-sizing: border-box;
 }
 
 .bl-count {
@@ -59,8 +70,22 @@
     background: #e8e8e8;
     padding: 10px;
     border-radius: 2px;
-
 }
+
+.bl-label.single-label{
+    background: #e8e8e8;
+    padding: 10px;
+    border-radius: 2px;
+    margin-left: 38.6px;
+    margin-top: 225px;
+}
+
+.bl-count.single-label {
+    width: 30%;
+    float: left;
+    margin-top: 6.4px;
+}
+
 .bl-plus {
     background: #04a613;
     color: #fff;
@@ -82,11 +107,9 @@
     border: none;
     cursor: pointer;
     border-radius: 50%;
+    transition: background 1s ease;
 
-}
 
-.product-label{
-    display: inline-block;
 }
 
 .bl-delete{
@@ -103,7 +126,7 @@
 
 .bl-unbuy{
     background: #DADADA;
-    padding: 10px;
+    padding: 10px 20px 10px 20px;
     margin-right: 5px;
     border: none;
     float: right;
@@ -189,22 +212,26 @@ h3 {
 
 .remaining-elements{
     border-bottom: 1px solid #DADADA;
-    height: 60px;
+    height: auto;
     padding: 10px;
 }
 
 .buying-elements{
     border-bottom: 1px solid #DADADA;
-    height: 40px;
+    height: auto;
+    padding: 10px;
 }
 
 .product-label {
+    font-size: 12px;
     margin-left: 5px;
     margin-bottom: 5px;
     margin-top: 1px;
     border-radius: 5px;
     padding: 5px;
     background-color: #DADADA;
+    display: inline-block;
+    box-sizing: border-box;
 }
 
 .orange {
