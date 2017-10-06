@@ -53,10 +53,10 @@ $(function () {
 
         $node.find(".bl-product").click(function () {
             if(!($node.hasClass("is-bought"))){
-            $node.find(".bl-product").hide();
-            $node.find(".edit").show();
-            $node.find(".edit").focus();
-            $node.find(".edit").val(title);
+                $node.find(".bl-product").hide();
+                $node.find(".edit").show();
+                $node.find(".edit").focus();
+                $node.find(".edit").val(title);
             }
         });
 
